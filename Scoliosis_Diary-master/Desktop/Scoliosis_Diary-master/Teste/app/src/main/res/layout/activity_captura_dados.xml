@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.giovana.teste.CapturaDadosActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Como esta se sentindo hoje?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton16"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/trasparentAccent"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton22"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton21"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@mipmap/ic_launcher_neutro" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton19"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/trasparentAccent"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@mipmap/ic_launcher_happy" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton20"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton22"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@mipmap/ic_launcher_raiva" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton21"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/trasparentAccent"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton16"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton19"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@mipmap/ic_launcher_sorri" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton22"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/trasparentAccent"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton20"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton16"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@mipmap/ic_launcher_triste" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Contente"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton19"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton19"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton19" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Feliz"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton21"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton21"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton21" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Neutro"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton16"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton16"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton16" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Triste"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton22"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton22"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton22" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Raiva"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton20"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton20"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton20" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="De 1 a 10 quanto esta sua dor física?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="176dp"
+        android:layout_height="276dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#58FA58"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#82FA58"
+            android:text="2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#ACFA58"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#D0FA58"
+            android:text="4" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#F4FA58"
+            android:text="5" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#F7D358"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#FAAC58"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#FA8258"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#FA5858"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#FE2E2E"
+            android:text="10" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnexams"
+        android:layout_width="122dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFEB3B"
+        android:backgroundTint="#FFEB3B"
+        android:text="Meus Exames"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.886"
+        android:textColor="#ffffff"/>
+
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="122dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#76FF03"
+        android:backgroundTint="#76FF03"
+        android:onClick="IrDiario"
+        android:stateListAnimator="@drawable/buttonstylecliked"
+        android:text="Diário"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/button8"
+        android:layout_width="122dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#76FF03"
+        android:backgroundTint="#76FF03"
+        android:text="histórico"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btnexams"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.81" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

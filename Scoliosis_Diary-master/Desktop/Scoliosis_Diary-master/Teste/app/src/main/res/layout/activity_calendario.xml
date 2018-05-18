@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myCoordinatorLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="67dp">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CalendarView
+                android:id="@+id/calendarView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:showWeekNumber="false" />
+
+            <Button
+                android:id="@+id/btnperfil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/calendarView1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/calendarView1"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/buttonstylenormal"
+                android:text="Perfil"
+                android:onClick="IR_PERFIL"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnnotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/calendarView1"
+            android:layout_alignStart="@+id/calendarView1"
+            android:layout_below="@+id/calendarView1"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:background="@color/colorPrimary"
+            android:text="Notas"
+            android:textColor="#ffffff" />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

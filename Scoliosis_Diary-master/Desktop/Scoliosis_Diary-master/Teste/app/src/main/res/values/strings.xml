@@ -1,0 +1,8 @@
+<resources>
+    <string name="ScoliosisDiary_test">Descreva seu dia.</string>
+    <string name="Diario_de_teste">Nenhuma anotação foi criada no diario</string>
+    <string name="ScoliosisDiary">Scoliosis Diary</string>
+    <string name="action_settings">Settings</string>
+    <string name="Mensgam_atualização">Essa função estará disponível em breve</string>
+    <string name="TXTDIARIO"></string>
+</resources>
